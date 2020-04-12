@@ -1,7 +1,50 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "icomoon";
+  src: url("../fonts/icomoon.eot?ugz6d7");
+  src: url("fonts/icomoon.eot?ugz6d7#iefix") format("embedded-opentype"), url("../fonts/icomoon.ttf?ugz6d7") format("truetype"), url("../fonts/icomoon.woff?ugz6d7") format("woff"), url("../fonts/icomoon.svg?ugz6d7#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+[class^=icon-], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "icomoon" !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-facebook2:before {
+  content: "";
+}
+
+.icon-instagram:before {
+  content: "";
+}
+
+.icon-whatsapp:before {
+  content: "";
+}
+
+.icon-youtube:before {
+  content: "";
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
 }
 
 body {
@@ -10,7 +53,6 @@ body {
   height: 400vh;
   margin: 0 auto;
   border: 1px solid red;
-  font-size: 10px;
 }
 
 .navegation {
@@ -22,12 +64,13 @@ body {
   justify-content: center;
   align-items: center;
   position: fixed;
+  z-index: 2;
 }
 .navegation__icon {
   display: flex;
   justify-content: center;
   width: 230px;
-  height: 28.1em;
+  height: 28.1rem;
 }
 .navegation li {
   display: flex;
@@ -44,7 +87,7 @@ body {
   align-items: center;
   width: inherit;
   height: inherit;
-  font-size: 2em;
+  font-size: 2rem;
   color: #A0A0A0;
   text-decoration: none;
 }
@@ -58,4 +101,95 @@ body {
 }
 .navegation li:nth-child(5)::after {
   border-bottom: 0;
+}
+
+.rrss {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 9.7rem;
+  height: 38.7rem;
+  border: 1px solid red;
+  position: fixed;
+  top: 90px;
+  left: 92.2vw;
+  z-index: 2;
+}
+.rrss__icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  margin-top: 20px;
+  background-color: #02204B;
+}
+.rrss__icon a {
+  width: inherit;
+  height: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.rrss__icon .icon-whatsapp {
+  font-size: 35px;
+  color: white;
+}
+.rrss__icon .icon-facebook2 {
+  font-size: 35px;
+  color: white;
+}
+.rrss__icon .icon-instagram {
+  font-size: 35px;
+  color: white;
+}
+.rrss__icon .icon-youtube {
+  font-size: 35px;
+  color: white;
+}
+
+.banner {
+  width: 100%;
+  height: auto;
+  border: 1px solid red;
+  position: relative;
+}
+.banner__img {
+  width: 100%;
+  position: absolute;
+  overflow: hidden;
+}
+.banner__img img {
+  border-image: fill;
+  position: relative;
+  right: -130px;
+}
+.banner h1 {
+  width: 100%;
+  max-width: 350px;
+  font-size: 6em;
+  position: relative;
+  left: 267px;
+  top: 242px;
+  color: #02204B;
+  z-index: 2;
+}
+.banner p {
+  position: relative;
+  left: 267px;
+  top: 262px;
+  font-size: 1.6rem;
+  color: #A0A0A0;
+}
+.banner__boton {
+  position: relative;
+  left: 267px;
+  top: 292px;
+  width: 118px;
+  height: 32px;
+  font-size: 1.6rem;
+  background-color: #AEA56E;
+  color: white;
+  border: 0;
 }
