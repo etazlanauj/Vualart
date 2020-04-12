@@ -1,0 +1,66 @@
+$color-cream: #FBECD9;
+$color-cream-hover: #EFE1C1;
+$color-royal-blue: #02204B;
+$color-ocre: #AEA56E;
+$color-grey: #A0A0A0;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    max-width: 1366px;
+    height: 400vh;
+    margin: 0 auto;
+    border: 1px solid red;
+    font-size: 10px;
+}
+.navegation{
+    display: flex;
+    flex-direction: column;
+    width: 230px;
+    height: 706px;
+    background-color: $color-cream;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    &__icon{
+        display: flex;
+        justify-content: center;
+        width: 230px;
+        height: 28.1em;
+    }
+            li{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 230px;
+                height: 103px;
+                list-style: none;
+                a{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    width: inherit;
+                    height: inherit;
+                    font-size: 2em;
+                    color: $color-grey;
+                    text-decoration: none;
+                }
+                a:hover{
+                    background-color: $color-cream-hover;
+                }
+            }
+            li::after{
+                content: '';
+                width: 50%;
+                border-bottom: 1px solid rgba($color-grey, .3);
+            }
+            li:nth-child(5)::after{
+                border-bottom: 0;
+            }
+
+}
