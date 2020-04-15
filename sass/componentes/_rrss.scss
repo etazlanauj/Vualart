@@ -1,0 +1,46 @@
+
+.rrss{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 9.7rem;
+    height: 38.7rem;
+    position: fixed;
+    top: 90px;
+    left: 92.2vw;
+    z-index: 2;
+    &__icon{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 60px;
+        height: 60px;
+        margin-top: 20px;
+        background-color: $color-royal-blue;
+        a{
+            width: inherit;
+            height: inherit;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .icon-whatsapp{
+            font-size: 35px;
+            color: white;
+        }
+        .icon-facebook2{
+            font-size: 35px;
+            color: white;
+        }
+        .icon-instagram{
+            font-size: 35px;
+            color: white;
+        }
+        .icon-youtube{
+            font-size: 35px;
+            color: white;
+        }
+    }
+
+}

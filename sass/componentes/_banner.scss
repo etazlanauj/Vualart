@@ -1,0 +1,42 @@
+
+.banner{
+    width: 100%;
+    height: 70.2rem;
+    position: relative;
+    &__img{
+        width: 100%;
+        position: absolute;
+        overflow: hidden;
+        img{
+            position: relative;
+            right: -130px;
+        }
+    }
+    h1{
+        width: 100%;
+        font-size: $title;
+        position: relative;
+        left: 267px;
+        top: 242px;
+        color: $color-royal-blue;
+        z-index: 2;
+    }
+    p{
+        position: relative;
+        left: 267px;
+        top: 262px;
+        font-size: 1.6rem;
+        color: $color-grey;
+    }
+    &__boton{
+        position: relative;
+        left: 267px;
+        top: 292px;
+        width: 118px;
+        height: 32px;
+        font-size: 1.6rem;
+        background-color: $color-ocre;
+        color: white;
+        border: 0;
+    }
+}

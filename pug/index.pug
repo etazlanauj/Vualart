@@ -1,4 +1,5 @@
--var titles = ["Espacios con personalidad"]
+include components/globales.pug
+
 
 doctype html
 html
@@ -10,37 +11,33 @@ html
         meta(name="viewport" content="width=device-width, initial-scale=1.0")
         title Valuart
     body
-        header.navegation
-            .navegation__icon
-                img(src="../img/Logo_Vualart.svg", alt="logo-valuart")
-            nav
+        include components/navegation.pug
+        include components/rrss.pug
+        include components/banner.pug
+        section.products
+            .products__caja-azul
+            .products__caja-productos
+                .arrow__up
                 ul
                     li
-                        a(href="#") Conócenos
+                        p
+                            |01 
+                        a(href="") Diseño
                     li
-                        a(href="#") Productos & </br> servicios
+                        p
+                            |02
+                        a(href="") Mobiliario
                     li
-                        a(href="#") Proyectos
+                        p
+                            |03 
+                            a(href="") Construcción
                     li
-                        a(href="#") Contacto
-                    li
-                        a(href="#") Blog
+                        p
+                            |04 
+                            a(href="") Remodelación
+                .arrow__down
+            .products__caja-img
+                h1 Productos &</br> servicios
+                img(srcset="../img/lampara-vualart.png, ../img/lampara-vualart@2x.png x2", alt="")
 
-        section.rrss
-            .rrss__icon
-                a: span.icon-whatsapp
-            .rrss__icon
-                a: span.icon-facebook2
-            .rrss__icon
-                a: span.icon-instagram
-            .rrss__icon
-                a: span.icon-youtube
-
-        section.banner
-            .banner__img
-                img(srcset="../img/Vualart-cover-6@2x.jpg , ../img/Vualart-cover-6.jpg x2")
-            each title in titles
-                h1=title
-            p 16 Lorem ipsum dolor sit amet consectetur, </br>adipiscing elit conubia vulputate nam </br>augue, viverra eros velit scelerisque.
-            button.banner__boton Más info
 
