@@ -23,11 +23,7 @@
         grid-row-start: 1;
         grid-row-end: 4;
         .arrow__up{
-            margin: 20px;
-            border-bottom: 10px solid $color-ocre;
-            border-top: 10px solid rgba(#fff,0);
-            border-left: 10px solid rgba(#fff,0);
-            border-right: 10px solid rgba(#fff,0);
+            @extend .arrow__up;
         }
         ul{
             display: flex;
@@ -54,11 +50,7 @@
         }
         }
         .arrow__down{
-            margin: 20px;
-            border-top: 10px solid $color-ocre;
-            border-bottom: 10px solid rgba(#fff,0);
-            border-left: 10px solid rgba(#fff,0);
-            border-right: 10px solid rgba(#fff,0);
+            @extend .arrow__down;
         }
     }
     &__caja-img{

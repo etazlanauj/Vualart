@@ -3,3 +3,56 @@
 @import "componentes/rrss.scss";
 @import "componentes/banner.scss";
 @import "componentes/products.scss";
+
+.proyectos{
+    display: grid;
+    position: relative;
+    grid-template-columns: 1fr 1fr 3fr;
+    grid-template-rows: repeat(3, 1fr);
+    width: 100%;
+    height: 992px;
+    &__contenido{
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 3;
+        h1{
+            width: 100%;
+            font-size: $title;
+            position: relative;
+            padding-top: 150px;
+            color: $color-royal-blue;
+        }
+        h3{
+            @include subtitulos;
+            margin-top: 50px;
+        }
+        p{
+            margin-top: 25px;
+            font-size: 1.6rem;
+            color: $color-grey;
+        }
+        button{
+            position: relative;
+            margin-top: 50px;
+            z-index: 3;
+            cursor: pointer;
+            @include boton-2;
+        }
+    }
+    &__caja-crema{
+        position: relative;
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 4;
+        background-color: $color-cream;
+        background-image: url("../img/patron.svg");
+        img{
+            width: 135%;
+            position: absolute;
+            left: -290px;
+            top: 44%;
+        }
+    }
+}

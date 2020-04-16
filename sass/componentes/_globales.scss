@@ -46,6 +46,38 @@ $color-grey: #A0A0A0;
 
 $title: 6em;
 
+.arrow__up{
+    margin: 20px;
+    border-bottom: 10px solid $color-ocre;
+    border-top: 10px solid rgba(#fff,0);
+    border-left: 10px solid rgba(#fff,0);
+    border-right: 10px solid rgba(#fff,0);
+}
+
+.arrow__down{
+    margin: 20px;
+    border-top: 10px solid $color-ocre;
+    border-bottom: 10px solid rgba(#fff,0);
+    border-left: 10px solid rgba(#fff,0);
+    border-right: 10px solid rgba(#fff,0);
+}
+
+@mixin subtitulos{
+    font-size: 21px;
+    line-height: .9em;
+    color: $color-ocre;
+}
+
+@mixin boton-2 {
+    width: 118px;
+    height: 32px;
+    font-size: 1.6rem;
+    background-color: $color-royal-blue;
+    color: white;
+    border: 0;
+    
+}
+
 *{
     margin: 0;
     padding: 0;
