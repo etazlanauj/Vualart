@@ -62,6 +62,12 @@ $title: 6em;
     border-right: 10px solid rgba(#fff,0);
 }
 
+@mixin titulos{
+  font-size: $title;
+  line-height: .9em;
+  color: $color-royal-blue;
+}
+
 @mixin subtitulos{
     font-size: 21px;
     line-height: .9em;
@@ -89,7 +95,7 @@ html{
 body{
     width: 100%;
     max-width: 1366px;
-    height: 400vh;
+    height: 800vh;
     margin: 0 auto;
     border: 1px solid red;
 }

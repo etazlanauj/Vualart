@@ -1,0 +1,15 @@
+mixin testimonial(imagen,titulos,contenido)
+    .testimoniales__testimonio
+                img(src="../img/"+imagen, alt="")
+                h3=titulos
+                p.subtitulo Lorem Ipsum-2
+                p=contenido
+                .testimoniales__caja
+                    p.caja-excelente Excelente
+
+section.testimoniales
+    h1 Testimoniales
+    .testimoniales__azul
+    +testimonial('cliente-3.png','Nombre','22 Lorem ipsum dolositameconsectetuadipiscing elit gravida, enim est rhoncufaucibuslitorblandit tincidunt dui diamodio dictum telluprimisfacilisinascetur.')
+    +testimonial('cliente-3.png','Nombre','Lorem')
+    +testimonial('cliente-3.png','Nombre','22 Lorem ipsum dolositameconsectetuadipiscing elit gravida, enim est rhoncufaucibuslitorblandit tincidunt dui diamodio dictum telluprimisfacilisinascetur.')
