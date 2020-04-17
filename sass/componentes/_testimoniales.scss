@@ -93,3 +93,19 @@
         }
     }
 }
+
+@media (max-width: 1024px){
+    .testimoniales{
+        h1{
+            position: relative;
+            left: 30%;
+        }
+        &__testimonio{
+            width: 90%;
+            margin: 3%;
+            margin-top: 190px;
+            background-size: 100% ;
+            
+        }
+    }
+}

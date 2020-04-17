@@ -74,6 +74,15 @@ $title: 6em;
     color: $color-ocre;
 }
 
+@mixin boton {
+  width: 118px;
+  height: 32px;
+  font-size: 1.6rem;
+  background-color: $color-ocre;
+  color: white;
+  border: 0;
+}
+
 @mixin boton-2 {
     width: 118px;
     height: 32px;
@@ -81,7 +90,6 @@ $title: 6em;
     background-color: $color-royal-blue;
     color: white;
     border: 0;
-    
 }
 
 *{
@@ -98,4 +106,10 @@ body{
     height: 800vh;
     margin: 0 auto;
     border: 1px solid red;
+}
+
+@media (max-width: 1024px){
+  body{
+    width: fit-content;
+  }
 }

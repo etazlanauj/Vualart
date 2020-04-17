@@ -1,5 +1,4 @@
-.icons
-{
+.icons{
     display: grid;
     grid-template-columns: 1fr 3fr 2fr;
     grid-template-rows: 1fr;
@@ -18,5 +17,13 @@
         img{
             padding: 20px;
         }
+    }
+}
+
+@media (max-width: 1024px){
+        .icons__containers{
+            grid-column-start: 1;
+            grid-column-end: 4;
+            padding-left: 0%;
     }
 }

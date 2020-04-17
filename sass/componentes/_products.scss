@@ -72,3 +72,27 @@
         }
     }
 }
+
+@media (max-width: 1024px){
+    .products{
+        overflow: hidden;
+        &__caja-azul{
+            display: none;
+        }
+        &__caja-productos{
+            grid-column-start: 1;
+            grid-column-end: 2;
+            }  
+        &__caja-img{
+            margin-left: 55px;
+            grid-column-start: 2;
+            grid-column-end: 4;
+
+            h1{
+                font-size: 4.5rem;
+                line-height: 3.5rem;
+                padding: 25%;
+            }
+        }
+    }
+}
